@@ -91,6 +91,79 @@ We use [GitHub’s default labels](https://docs.github.com/en/issues/using-label
 | `wontfix` | We have decided not to implement or change this (we add this when closing) | Out of scope or not something we will do |
 | `invalid` | Issue or discussion no longer relevant (we add this when closing) | Report was for wrong app, or issue is resolved and thread is noise |
 
+### Templates for common labels
+
+When you open a new issue, you can copy and paste one of these templates into the description and fill it in. This keeps reports consistent and makes it easier for us to help.
+
+#### `bug` report template
+
+```markdown
+**Summary**
+A short, clear description of the bug.
+
+**Steps to reproduce**
+1. …
+2. …
+3. …
+
+**Expected behaviour**
+What you thought would happen.
+
+**Actual behaviour**
+What actually happened, including any error messages.
+
+**Environment**
+- macOS version:
+- MacAppUpdater version:
+- How you installed MacAppUpdater (website / other):
+- Anything else that might be relevant (number of apps, network set-up, screenshots, logs, etc.):
+```
+
+#### `enhancement` / feature request template
+
+```markdown
+**Problem**
+What you are trying to achieve, or what feels painful or missing.
+
+**Proposed solution**
+What you would like MacAppUpdater to do.
+
+**Alternatives you have considered**
+Any other approaches or workarounds you have tried or thought about.
+
+**Additional context**
+Screenshots, rough mock-ups, or anything else that helps explain the idea.
+```
+
+#### `documentation` template
+
+```markdown
+**Page or section**
+Where in the documentation or in-app Help the problem is (if you know).
+
+**Current wording or behaviour**
+What it says or does now.
+
+**Suggested wording or change**
+What you think it should say or do instead.
+
+**Why this matters**
+How the change would make things clearer or more accurate.
+```
+
+#### `question` template
+
+```markdown
+**Question**
+What you would like to know.
+
+**Context**
+Anything about your set-up or goal that might affect the answer (macOS version, how you use MacAppUpdater, etc.).
+
+**What you have already tried**
+Search terms you used, FAQ entries or docs you read, or experiments you have already done.
+```
+
 We may add **priority** or **resolution** labels later; for now we keep to this set so it stays simple and consistent with what people expect on GitHub.
 
 ---
