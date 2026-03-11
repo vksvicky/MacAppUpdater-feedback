@@ -1,0 +1,64 @@
+name: "Crash Report"
+description: "Report a crash or unexpected termination of MacAppUpdater."
+title: "[Crash] "
+labels: ["bug", "crash"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a crash in **MacAppUpdater**.
+
+  - type: input
+    id: app_version
+    attributes:
+      label: MacAppUpdater version
+      description: You can find this in the app's About window.
+      placeholder: "v0.20.0"
+    validations:
+      required: true
+
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS version
+      description: The macOS version you are running MacAppUpdater on.
+      placeholder: "15.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A short description of what you were doing when the app crashed.
+      placeholder: "MacAppUpdater crashed when…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps just before the crash
+      description: Step-by-step actions leading up to the crash.
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: crash_log
+    attributes:
+      label: Crash log
+      description: |
+        Please paste the macOS crash report for MacAppUpdater here if available.
+        You can find it in Console.app under "Crash Reports" or in
+        `~/Library/Logs/DiagnosticReports`.
+      render: shell
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information or screenshots
+      description: Any extra context, screenshots, or logs that might help.

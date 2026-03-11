@@ -1,0 +1,74 @@
+name: "Bug Report"
+description: "Report a bug or issue with MacAppUpdater."
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug in **MacAppUpdater**.
+
+  - type: input
+    id: app_version
+    attributes:
+      label: MacAppUpdater version
+      description: You can find this in the app's About window.
+      placeholder: "v0.20.0"
+    validations:
+      required: true
+
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS version
+      description: The macOS version you are running MacAppUpdater on.
+      placeholder: "15.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the problem.
+      placeholder: "What went wrong?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions so we can reproduce the issue.
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: What actually happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information, logs, or screenshots
+      description: |
+        Drag and drop any screenshots or logs that help explain the issue.
+        MacAppUpdater log files are stored at:
+        `~/Library/Application Support/MacAppUpdater/logs/`
+        (for example `MacAppUpdater-YYYY-MM-DD.log`).

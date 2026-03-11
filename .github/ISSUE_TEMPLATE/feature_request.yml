@@ -1,0 +1,46 @@
+name: "Feature Request"
+description: "Suggest an idea or improvement for MacAppUpdater."
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement to **MacAppUpdater**.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the feature or improvement you would like.
+      placeholder: "A short, descriptive summary of the feature."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem this solves
+      description: What problem or pain point does this feature address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like MacAppUpdater to behave?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative solutions or features you have thought about.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any additional information, mock-ups, or screenshots.

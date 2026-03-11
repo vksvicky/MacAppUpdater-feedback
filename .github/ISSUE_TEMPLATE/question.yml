@@ -1,0 +1,23 @@
+name: "Question"
+description: "Ask a question about using MacAppUpdater."
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to ask a question about **MacAppUpdater**.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Please be as clear and specific as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      description: Any extra context, screenshots, or examples that might help.

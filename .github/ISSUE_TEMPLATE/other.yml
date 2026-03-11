@@ -1,0 +1,33 @@
+name: "Not sure / Other"
+description: "Use this if you are not sure which category fits your issue."
+title: "[Other] "
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you are not sure whether this is a bug, feature request, question, or crash report, use this template.
+        The MacAppUpdater team will review and reclassify it as needed.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A short overview of what you would like to report.
+      placeholder: "A brief description in your own words."
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Please provide as much detail as you can, including what you were trying to do, what happened, and any steps that might help us reproduce it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Any screenshots, logs, or extra context that might help.

@@ -1,0 +1,13 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email support
+    url: mailto:support@cycleruncode.club
+    about: Contact the MacAppUpdater support team by email.
+
+  - name: Website
+    url: https://cycleruncode.club
+    about: Visit the CyclerunCode website for news and information.
+
+  - name: In‑app help
+    url: https://cycleruncode.club
+    about: Help and documentation are available directly within MacAppUpdater (Help menu).
